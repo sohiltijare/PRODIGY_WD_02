@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Stopwatch | PRODIGY Infotech Task</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="particles" id="particles-js"></div>
+    
+    <div class="container">
+        <header>
+            <h1 class="neon-text" data-text="NEON STOPWATCH">STOPWATCH</h1>
+            <div class="task-badge">PRODIGY Infotech | Task-02</div>
+        </header>
+
+        <main>
+            <div class="stopwatch-container">
+                <div class="stopwatch-face">
+                    <div class="outer-ring">
+                        <div class="gradient-circle">
+                            <div class="inner-circle">
+                                <div class="time-display" id="display">00:00:00.00</div>
+                                <div class="lap-counter" id="lap-count">Laps: 0</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-ring">
+                        <svg class="progress-ring__circle" width="320" height="320">
+                            <circle class="progress-ring__circle-bg" stroke-width="8" fill="transparent" r="150" cx="160" cy="160"/>
+                            <circle class="progress-ring__circle-fill" stroke-width="8" fill="transparent" r="150" cx="160" cy="160"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <button id="start" class="btn btn-primary pulse">
+                        <i class="fas fa-play"></i> Start
+                    </button>
+                    <button id="pause" class="btn btn-secondary">
+                        <i class="fas fa-pause"></i> Pause
+                    </button>
+                    <button id="lap" class="btn btn-accent">
+                        <i class="fas fa-flag"></i> Lap
+                    </button>
+                    <button id="reset" class="btn btn-danger">
+                        <i class="fas fa-redo"></i> Reset
+                    </button>
+                </div>
+            </div>
+
+            <div class="laps-container">
+                <h2 class="neon-subtext">LAP TIMES</h2>
+                <div class="laps-header">
+                    <span>Lap</span>
+                    <span>Time</span>
+                    <span>Split</span>
+                </div>
+                <div class="laps-list" id="laps"></div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>Created with <i class="fas fa-heart"></i> for PRODIGY Infotech Internship</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
